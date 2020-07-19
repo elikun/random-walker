@@ -8,7 +8,7 @@
 #define ENVIRONMENT_ORIGIN_Y (80)                        // Unit: pixel
 #define DOT_DIAMETER         (30)                        // Unit: pixel
 #define DOT_RADIUS           (DOT_DIAMETER / 2)          // Unit: pixel
-#define TITLE_POSITION_X     (130)                       // Unit: pixel
+#define TITLE_POSITION_X     (140)                       // Unit: pixel
 #define TITLE_POSITION_Y     (15)                        // Unit: pixel
 #define TITLE_FONT_SIZE      (16)                        // Unit: pixel
 #define AXIS_LABEL_FONT_SIZE (8)                         // Unit: pixel
