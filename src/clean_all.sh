@@ -27,3 +27,6 @@ rm -f ./moc_*
 # Clean installed files
 rm -f /app/exe/commander
 rm -f /app/exe/environment
+
+# Remove build.log file
+rm -f ./build.log
