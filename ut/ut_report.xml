@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="24" failures="0" disabled="0" errors="0" timestamp="2020-07-19T22:03:27" time="0.072" name="AllTests">
-  <testsuite name="CommandQueueTest" tests="4" failures="0" disabled="0" errors="0" time="0.003">
+<testsuites tests="24" failures="0" disabled="0" errors="0" timestamp="2020-07-19T23:00:49" time="0.072" name="AllTests">
+  <testsuite name="CommandQueueTest" tests="4" failures="0" disabled="0" errors="0" time="0.004">
     <testcase name="DefaultConstructor_EmptyQueueCreated" status="run" time="0" classname="CommandQueueTest" />
     <testcase name="PushBack_SizeIsIncreased" status="run" time="0" classname="CommandQueueTest" />
     <testcase name="PopFront_SizeIsDecreased" status="run" time="0" classname="CommandQueueTest" />
@@ -9,32 +9,32 @@
   <testsuite name="CommandReceiverTest" tests="1" failures="0" disabled="0" errors="0" time="0.001">
     <testcase name="StartCommandReceive_ThreadCreationSuccess" status="run" time="0" classname="CommandReceiverTest" />
   </testsuite>
-  <testsuite name="CommandSenderTest" tests="1" failures="0" disabled="0" errors="0" time="0.002">
-    <testcase name="StartCommandSend_ThreadCreationSuccess" status="run" time="0" classname="CommandSenderTest" />
+  <testsuite name="CommandSenderTest" tests="1" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="StartCommandSend_ThreadCreationSuccess" status="run" time="0.001" classname="CommandSenderTest" />
   </testsuite>
   <testsuite name="CommandGeneratorTest" tests="1" failures="0" disabled="0" errors="0" time="0.005">
     <testcase name="StartCommandGeneration_ThreadCreationSuccess" status="run" time="0.003" classname="CommandGeneratorTest" />
   </testsuite>
-  <testsuite name="CommanderTest" tests="2" failures="0" disabled="0" errors="0" time="0.005">
+  <testsuite name="CommanderTest" tests="2" failures="0" disabled="0" errors="0" time="0.006">
     <testcase name="StartCommandGeneration_ThreadCreationSuccess" status="run" time="0.003" classname="CommanderTest" />
     <testcase name="StartCommandSend_ThreadCreationSuccess" status="run" time="0.001" classname="CommanderTest" />
   </testsuite>
-  <testsuite name="EdgeTest" tests="6" failures="0" disabled="0" errors="0" time="0.006">
+  <testsuite name="EdgeTest" tests="6" failures="0" disabled="0" errors="0" time="0.008">
     <testcase name="DefaultConstructorAndGetters" status="run" time="0" classname="EdgeTest" />
     <testcase name="ConstructorAndGetters" status="run" time="0" classname="EdgeTest" />
     <testcase name="Setters_WithinRange" status="run" time="0" classname="EdgeTest" />
     <testcase name="Setters_OutOfRange" status="run" time="0" classname="EdgeTest" />
-    <testcase name="IsValidEdge_Valid" status="run" time="0" classname="EdgeTest" />
+    <testcase name="IsValidEdge_Valid" status="run" time="0.001" classname="EdgeTest" />
     <testcase name="IsValidEdge_Invalid" status="run" time="0" classname="EdgeTest" />
   </testsuite>
   <testsuite name="GraphTest" tests="9" failures="0" disabled="0" errors="0" time="0.038">
     <testcase name="Init_AllHorizontal" status="run" time="0.004" classname="GraphTest" />
-    <testcase name="Init_AllVertical" status="run" time="0.005" classname="GraphTest" />
+    <testcase name="Init_AllVertical" status="run" time="0.004" classname="GraphTest" />
     <testcase name="Init_Empty" status="run" time="0.004" classname="GraphTest" />
-    <testcase name="Init_RepeatedEdges" status="run" time="0.004" classname="GraphTest" />
-    <testcase name="Init_UniqueEdges" status="run" time="0.002" classname="GraphTest" />
-    <testcase name="IsValidMovement_Valid" status="run" time="0.004" classname="GraphTest" />
-    <testcase name="IsValidMovement_Invalid" status="run" time="0.007" classname="GraphTest" />
+    <testcase name="Init_RepeatedEdges" status="run" time="0.003" classname="GraphTest" />
+    <testcase name="Init_UniqueEdges" status="run" time="0.003" classname="GraphTest" />
+    <testcase name="IsValidMovement_Valid" status="run" time="0.005" classname="GraphTest" />
+    <testcase name="IsValidMovement_Invalid" status="run" time="0.005" classname="GraphTest" />
     <testcase name="EdgeComparison_Same" status="run" time="0" classname="GraphTest" />
     <testcase name="EdgeComparison_Different" status="run" time="0" classname="GraphTest" />
   </testsuite>

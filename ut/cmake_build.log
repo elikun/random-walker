@@ -1,0 +1,40 @@
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Qt5:
+/usr/include/x86_64-linux-gnu/qt5//usr/include/x86_64-linux-gnu/qt5/QtCore/usr/lib/x86_64-linux-gnu/qt5//mkspecs/linux-g++
+-- Found GTest: /usr/local/lib/libgtest.a  
+/usr/local/include
+/usr/local/lib/libgtest.a
+/usr/local/lib/libgtest_main.a
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /app/ut
+Scanning dependencies of target run_all_unit_tests
+[  6%] Building CXX object CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandQueueTest.cpp.o
+[ 13%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o
+[ 20%] Building CXX object CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandReceiverTest.cpp.o
+[ 26%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o
+[ 33%] Building CXX object CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandSenderTest.cpp.o
+[ 40%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.o
+[ 46%] Building CXX object CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.o
+[ 53%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o
+[ 60%] Building CXX object CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommanderTest.cpp.o
+[ 66%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/Commander.cpp.o
+[ 73%] Building CXX object CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/EdgeTest.cpp.o
+[ 80%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.o
+[ 86%] Building CXX object CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/GraphTest.cpp.o
+[ 93%] Building CXX object CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.o
+[100%] Linking CXX executable run_all_unit_tests
+[100%] Built target run_all_unit_tests
