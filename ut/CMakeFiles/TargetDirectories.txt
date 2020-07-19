@@ -1,0 +1,3 @@
+/app/ut/CMakeFiles/rebuild_cache.dir
+/app/ut/CMakeFiles/runUnitTests.dir
+/app/ut/CMakeFiles/edit_cache.dir
