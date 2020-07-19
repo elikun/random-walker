@@ -1,9 +1,11 @@
 #ifndef COMMON_CONSTANTS_H
 #define COMMON_CONSTANTS_H
 
-#define ENVIRONMENT_PORT      (10003)
+#include <string>
 
-#define CONFIG_INI_FILE       "/app/exe/conf.ini"
+const uint16_t ENVIRONMENT_PORT = 10001;
+
+const std::string CONFIG_INI_FILE = "/app/exe/conf.ini";
 
 #define LOOPBACK_IPV4_ADDRESS "127.0.0.1"
 

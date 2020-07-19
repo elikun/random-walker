@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /app/src/Common/CommonConstants.hpp
+string
+-
 
 /app/src/Common/MDL_CommandQueue/CommandQueue.cpp
 CommandQueue.hpp
