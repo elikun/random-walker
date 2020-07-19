@@ -14,7 +14,7 @@ rm -f ./SS_Commander/MDL_CommandGenerator/*.o
 rm -f ./SS_Commander/MDL_Commander/*.o
 rm -f ./SS_Commander/Makefile*
 
-# Clean Envrionment subsystem
+# Clean Environment subsystem
 rm -f ./SS_Environment/environment
 rm -f ./SS_Environment/*.o
 rm -f ./SS_Environment/MDL_Dot/*.o
