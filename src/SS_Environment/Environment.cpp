@@ -58,7 +58,7 @@ void Environment::initEnvironmentMap()
     // Add title header
     QFont font;
     font.setPointSize(TITLE_FONT_SIZE);
-    QGraphicsTextItem *text = m_scene->addText("2D RANDOM WALK SIMULATION", font);
+    QGraphicsTextItem *text = m_scene->addText("2D RANDOM WALK", font);
     text->setPos(TITLE_POSITION_X, TITLE_POSITION_Y);
     text->setDefaultTextColor(Qt::white);
     text->setFont(font);
