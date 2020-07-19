@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named runUnitTests
+# Target rules for targets named run_all_unit_tests
 
 # Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runUnitTests
-.PHONY : runUnitTests
+run_all_unit_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_all_unit_tests
+.PHONY : run_all_unit_tests
 
 # fast build rule for target.
-runUnitTests/fast:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-.PHONY : runUnitTests/fast
+run_all_unit_tests/fast:
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/build
+.PHONY : run_all_unit_tests/fast
 
 CommonTest/CommandQueueTest.o: CommonTest/CommandQueueTest.cpp.o
 
@@ -129,7 +129,7 @@ CommonTest/CommandQueueTest.o: CommonTest/CommandQueueTest.cpp.o
 
 # target to build an object file
 CommonTest/CommandQueueTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandQueueTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandQueueTest.cpp.o
 .PHONY : CommonTest/CommandQueueTest.cpp.o
 
 CommonTest/CommandQueueTest.i: CommonTest/CommandQueueTest.cpp.i
@@ -138,7 +138,7 @@ CommonTest/CommandQueueTest.i: CommonTest/CommandQueueTest.cpp.i
 
 # target to preprocess a source file
 CommonTest/CommandQueueTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandQueueTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandQueueTest.cpp.i
 .PHONY : CommonTest/CommandQueueTest.cpp.i
 
 CommonTest/CommandQueueTest.s: CommonTest/CommandQueueTest.cpp.s
@@ -147,7 +147,7 @@ CommonTest/CommandQueueTest.s: CommonTest/CommandQueueTest.cpp.s
 
 # target to generate assembly for a file
 CommonTest/CommandQueueTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandQueueTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandQueueTest.cpp.s
 .PHONY : CommonTest/CommandQueueTest.cpp.s
 
 CommonTest/CommandReceiverTest.o: CommonTest/CommandReceiverTest.cpp.o
@@ -156,7 +156,7 @@ CommonTest/CommandReceiverTest.o: CommonTest/CommandReceiverTest.cpp.o
 
 # target to build an object file
 CommonTest/CommandReceiverTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandReceiverTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandReceiverTest.cpp.o
 .PHONY : CommonTest/CommandReceiverTest.cpp.o
 
 CommonTest/CommandReceiverTest.i: CommonTest/CommandReceiverTest.cpp.i
@@ -165,7 +165,7 @@ CommonTest/CommandReceiverTest.i: CommonTest/CommandReceiverTest.cpp.i
 
 # target to preprocess a source file
 CommonTest/CommandReceiverTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandReceiverTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandReceiverTest.cpp.i
 .PHONY : CommonTest/CommandReceiverTest.cpp.i
 
 CommonTest/CommandReceiverTest.s: CommonTest/CommandReceiverTest.cpp.s
@@ -174,7 +174,7 @@ CommonTest/CommandReceiverTest.s: CommonTest/CommandReceiverTest.cpp.s
 
 # target to generate assembly for a file
 CommonTest/CommandReceiverTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandReceiverTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandReceiverTest.cpp.s
 .PHONY : CommonTest/CommandReceiverTest.cpp.s
 
 CommonTest/CommandSenderTest.o: CommonTest/CommandSenderTest.cpp.o
@@ -183,7 +183,7 @@ CommonTest/CommandSenderTest.o: CommonTest/CommandSenderTest.cpp.o
 
 # target to build an object file
 CommonTest/CommandSenderTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandSenderTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandSenderTest.cpp.o
 .PHONY : CommonTest/CommandSenderTest.cpp.o
 
 CommonTest/CommandSenderTest.i: CommonTest/CommandSenderTest.cpp.i
@@ -192,7 +192,7 @@ CommonTest/CommandSenderTest.i: CommonTest/CommandSenderTest.cpp.i
 
 # target to preprocess a source file
 CommonTest/CommandSenderTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandSenderTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandSenderTest.cpp.i
 .PHONY : CommonTest/CommandSenderTest.cpp.i
 
 CommonTest/CommandSenderTest.s: CommonTest/CommandSenderTest.cpp.s
@@ -201,7 +201,7 @@ CommonTest/CommandSenderTest.s: CommonTest/CommandSenderTest.cpp.s
 
 # target to generate assembly for a file
 CommonTest/CommandSenderTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/CommonTest/CommandSenderTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/CommonTest/CommandSenderTest.cpp.s
 .PHONY : CommonTest/CommandSenderTest.cpp.s
 
 SS_CommanderTest/CommandGeneratorTest.o: SS_CommanderTest/CommandGeneratorTest.cpp.o
@@ -210,7 +210,7 @@ SS_CommanderTest/CommandGeneratorTest.o: SS_CommanderTest/CommandGeneratorTest.c
 
 # target to build an object file
 SS_CommanderTest/CommandGeneratorTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.o
 .PHONY : SS_CommanderTest/CommandGeneratorTest.cpp.o
 
 SS_CommanderTest/CommandGeneratorTest.i: SS_CommanderTest/CommandGeneratorTest.cpp.i
@@ -219,7 +219,7 @@ SS_CommanderTest/CommandGeneratorTest.i: SS_CommanderTest/CommandGeneratorTest.c
 
 # target to preprocess a source file
 SS_CommanderTest/CommandGeneratorTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.i
 .PHONY : SS_CommanderTest/CommandGeneratorTest.cpp.i
 
 SS_CommanderTest/CommandGeneratorTest.s: SS_CommanderTest/CommandGeneratorTest.cpp.s
@@ -228,7 +228,7 @@ SS_CommanderTest/CommandGeneratorTest.s: SS_CommanderTest/CommandGeneratorTest.c
 
 # target to generate assembly for a file
 SS_CommanderTest/CommandGeneratorTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommandGeneratorTest.cpp.s
 .PHONY : SS_CommanderTest/CommandGeneratorTest.cpp.s
 
 SS_CommanderTest/CommanderTest.o: SS_CommanderTest/CommanderTest.cpp.o
@@ -237,7 +237,7 @@ SS_CommanderTest/CommanderTest.o: SS_CommanderTest/CommanderTest.cpp.o
 
 # target to build an object file
 SS_CommanderTest/CommanderTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommanderTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommanderTest.cpp.o
 .PHONY : SS_CommanderTest/CommanderTest.cpp.o
 
 SS_CommanderTest/CommanderTest.i: SS_CommanderTest/CommanderTest.cpp.i
@@ -246,7 +246,7 @@ SS_CommanderTest/CommanderTest.i: SS_CommanderTest/CommanderTest.cpp.i
 
 # target to preprocess a source file
 SS_CommanderTest/CommanderTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommanderTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommanderTest.cpp.i
 .PHONY : SS_CommanderTest/CommanderTest.cpp.i
 
 SS_CommanderTest/CommanderTest.s: SS_CommanderTest/CommanderTest.cpp.s
@@ -255,7 +255,7 @@ SS_CommanderTest/CommanderTest.s: SS_CommanderTest/CommanderTest.cpp.s
 
 # target to generate assembly for a file
 SS_CommanderTest/CommanderTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_CommanderTest/CommanderTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_CommanderTest/CommanderTest.cpp.s
 .PHONY : SS_CommanderTest/CommanderTest.cpp.s
 
 SS_EnvironmentTest/EdgeTest.o: SS_EnvironmentTest/EdgeTest.cpp.o
@@ -264,7 +264,7 @@ SS_EnvironmentTest/EdgeTest.o: SS_EnvironmentTest/EdgeTest.cpp.o
 
 # target to build an object file
 SS_EnvironmentTest/EdgeTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/EdgeTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/EdgeTest.cpp.o
 .PHONY : SS_EnvironmentTest/EdgeTest.cpp.o
 
 SS_EnvironmentTest/EdgeTest.i: SS_EnvironmentTest/EdgeTest.cpp.i
@@ -273,7 +273,7 @@ SS_EnvironmentTest/EdgeTest.i: SS_EnvironmentTest/EdgeTest.cpp.i
 
 # target to preprocess a source file
 SS_EnvironmentTest/EdgeTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/EdgeTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/EdgeTest.cpp.i
 .PHONY : SS_EnvironmentTest/EdgeTest.cpp.i
 
 SS_EnvironmentTest/EdgeTest.s: SS_EnvironmentTest/EdgeTest.cpp.s
@@ -282,7 +282,7 @@ SS_EnvironmentTest/EdgeTest.s: SS_EnvironmentTest/EdgeTest.cpp.s
 
 # target to generate assembly for a file
 SS_EnvironmentTest/EdgeTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/EdgeTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/EdgeTest.cpp.s
 .PHONY : SS_EnvironmentTest/EdgeTest.cpp.s
 
 SS_EnvironmentTest/GraphTest.o: SS_EnvironmentTest/GraphTest.cpp.o
@@ -291,7 +291,7 @@ SS_EnvironmentTest/GraphTest.o: SS_EnvironmentTest/GraphTest.cpp.o
 
 # target to build an object file
 SS_EnvironmentTest/GraphTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/GraphTest.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/GraphTest.cpp.o
 .PHONY : SS_EnvironmentTest/GraphTest.cpp.o
 
 SS_EnvironmentTest/GraphTest.i: SS_EnvironmentTest/GraphTest.cpp.i
@@ -300,7 +300,7 @@ SS_EnvironmentTest/GraphTest.i: SS_EnvironmentTest/GraphTest.cpp.i
 
 # target to preprocess a source file
 SS_EnvironmentTest/GraphTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/GraphTest.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/GraphTest.cpp.i
 .PHONY : SS_EnvironmentTest/GraphTest.cpp.i
 
 SS_EnvironmentTest/GraphTest.s: SS_EnvironmentTest/GraphTest.cpp.s
@@ -309,7 +309,7 @@ SS_EnvironmentTest/GraphTest.s: SS_EnvironmentTest/GraphTest.cpp.s
 
 # target to generate assembly for a file
 SS_EnvironmentTest/GraphTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/SS_EnvironmentTest/GraphTest.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/SS_EnvironmentTest/GraphTest.cpp.s
 .PHONY : SS_EnvironmentTest/GraphTest.cpp.s
 
 app/src/Common/MDL_CommandQueue/CommandQueue.o: app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o
@@ -318,7 +318,7 @@ app/src/Common/MDL_CommandQueue/CommandQueue.o: app/src/Common/MDL_CommandQueue/
 
 # target to build an object file
 app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o
 .PHONY : app/src/Common/MDL_CommandQueue/CommandQueue.cpp.o
 
 app/src/Common/MDL_CommandQueue/CommandQueue.i: app/src/Common/MDL_CommandQueue/CommandQueue.cpp.i
@@ -327,7 +327,7 @@ app/src/Common/MDL_CommandQueue/CommandQueue.i: app/src/Common/MDL_CommandQueue/
 
 # target to preprocess a source file
 app/src/Common/MDL_CommandQueue/CommandQueue.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.i
 .PHONY : app/src/Common/MDL_CommandQueue/CommandQueue.cpp.i
 
 app/src/Common/MDL_CommandQueue/CommandQueue.s: app/src/Common/MDL_CommandQueue/CommandQueue.cpp.s
@@ -336,7 +336,7 @@ app/src/Common/MDL_CommandQueue/CommandQueue.s: app/src/Common/MDL_CommandQueue/
 
 # target to generate assembly for a file
 app/src/Common/MDL_CommandQueue/CommandQueue.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandQueue/CommandQueue.cpp.s
 .PHONY : app/src/Common/MDL_CommandQueue/CommandQueue.cpp.s
 
 app/src/Common/MDL_CommandReceiver/CommandReceiver.o: app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o
@@ -345,7 +345,7 @@ app/src/Common/MDL_CommandReceiver/CommandReceiver.o: app/src/Common/MDL_Command
 
 # target to build an object file
 app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o
 .PHONY : app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.o
 
 app/src/Common/MDL_CommandReceiver/CommandReceiver.i: app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.i
@@ -354,7 +354,7 @@ app/src/Common/MDL_CommandReceiver/CommandReceiver.i: app/src/Common/MDL_Command
 
 # target to preprocess a source file
 app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.i
 .PHONY : app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.i
 
 app/src/Common/MDL_CommandReceiver/CommandReceiver.s: app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.s
@@ -363,7 +363,7 @@ app/src/Common/MDL_CommandReceiver/CommandReceiver.s: app/src/Common/MDL_Command
 
 # target to generate assembly for a file
 app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.s
 .PHONY : app/src/Common/MDL_CommandReceiver/CommandReceiver.cpp.s
 
 app/src/Common/MDL_CommandSender/CommandSender.o: app/src/Common/MDL_CommandSender/CommandSender.cpp.o
@@ -372,7 +372,7 @@ app/src/Common/MDL_CommandSender/CommandSender.o: app/src/Common/MDL_CommandSend
 
 # target to build an object file
 app/src/Common/MDL_CommandSender/CommandSender.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.o
 .PHONY : app/src/Common/MDL_CommandSender/CommandSender.cpp.o
 
 app/src/Common/MDL_CommandSender/CommandSender.i: app/src/Common/MDL_CommandSender/CommandSender.cpp.i
@@ -381,7 +381,7 @@ app/src/Common/MDL_CommandSender/CommandSender.i: app/src/Common/MDL_CommandSend
 
 # target to preprocess a source file
 app/src/Common/MDL_CommandSender/CommandSender.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.i
 .PHONY : app/src/Common/MDL_CommandSender/CommandSender.cpp.i
 
 app/src/Common/MDL_CommandSender/CommandSender.s: app/src/Common/MDL_CommandSender/CommandSender.cpp.s
@@ -390,7 +390,7 @@ app/src/Common/MDL_CommandSender/CommandSender.s: app/src/Common/MDL_CommandSend
 
 # target to generate assembly for a file
 app/src/Common/MDL_CommandSender/CommandSender.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/Common/MDL_CommandSender/CommandSender.cpp.s
 .PHONY : app/src/Common/MDL_CommandSender/CommandSender.cpp.s
 
 app/src/SS_Commander/Commander.o: app/src/SS_Commander/Commander.cpp.o
@@ -399,7 +399,7 @@ app/src/SS_Commander/Commander.o: app/src/SS_Commander/Commander.cpp.o
 
 # target to build an object file
 app/src/SS_Commander/Commander.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/Commander.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/Commander.cpp.o
 .PHONY : app/src/SS_Commander/Commander.cpp.o
 
 app/src/SS_Commander/Commander.i: app/src/SS_Commander/Commander.cpp.i
@@ -408,7 +408,7 @@ app/src/SS_Commander/Commander.i: app/src/SS_Commander/Commander.cpp.i
 
 # target to preprocess a source file
 app/src/SS_Commander/Commander.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/Commander.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/Commander.cpp.i
 .PHONY : app/src/SS_Commander/Commander.cpp.i
 
 app/src/SS_Commander/Commander.s: app/src/SS_Commander/Commander.cpp.s
@@ -417,7 +417,7 @@ app/src/SS_Commander/Commander.s: app/src/SS_Commander/Commander.cpp.s
 
 # target to generate assembly for a file
 app/src/SS_Commander/Commander.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/Commander.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/Commander.cpp.s
 .PHONY : app/src/SS_Commander/Commander.cpp.s
 
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.o: app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o
@@ -426,7 +426,7 @@ app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.o: app/src/SS_Command
 
 # target to build an object file
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o
 .PHONY : app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.o
 
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.i: app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.i
@@ -435,7 +435,7 @@ app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.i: app/src/SS_Command
 
 # target to preprocess a source file
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.i
 .PHONY : app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.i
 
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.s: app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.s
@@ -444,7 +444,7 @@ app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.s: app/src/SS_Command
 
 # target to generate assembly for a file
 app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.s
 .PHONY : app/src/SS_Commander/MDL_CommandGenerator/CommandGenerator.cpp.s
 
 app/src/SS_Environment/MDL_Edge/Edge.o: app/src/SS_Environment/MDL_Edge/Edge.cpp.o
@@ -453,7 +453,7 @@ app/src/SS_Environment/MDL_Edge/Edge.o: app/src/SS_Environment/MDL_Edge/Edge.cpp
 
 # target to build an object file
 app/src/SS_Environment/MDL_Edge/Edge.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.o
 .PHONY : app/src/SS_Environment/MDL_Edge/Edge.cpp.o
 
 app/src/SS_Environment/MDL_Edge/Edge.i: app/src/SS_Environment/MDL_Edge/Edge.cpp.i
@@ -462,7 +462,7 @@ app/src/SS_Environment/MDL_Edge/Edge.i: app/src/SS_Environment/MDL_Edge/Edge.cpp
 
 # target to preprocess a source file
 app/src/SS_Environment/MDL_Edge/Edge.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.i
 .PHONY : app/src/SS_Environment/MDL_Edge/Edge.cpp.i
 
 app/src/SS_Environment/MDL_Edge/Edge.s: app/src/SS_Environment/MDL_Edge/Edge.cpp.s
@@ -471,7 +471,7 @@ app/src/SS_Environment/MDL_Edge/Edge.s: app/src/SS_Environment/MDL_Edge/Edge.cpp
 
 # target to generate assembly for a file
 app/src/SS_Environment/MDL_Edge/Edge.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Edge/Edge.cpp.s
 .PHONY : app/src/SS_Environment/MDL_Edge/Edge.cpp.s
 
 app/src/SS_Environment/MDL_Graph/Graph.o: app/src/SS_Environment/MDL_Graph/Graph.cpp.o
@@ -480,7 +480,7 @@ app/src/SS_Environment/MDL_Graph/Graph.o: app/src/SS_Environment/MDL_Graph/Graph
 
 # target to build an object file
 app/src/SS_Environment/MDL_Graph/Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.o
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.o
 .PHONY : app/src/SS_Environment/MDL_Graph/Graph.cpp.o
 
 app/src/SS_Environment/MDL_Graph/Graph.i: app/src/SS_Environment/MDL_Graph/Graph.cpp.i
@@ -489,7 +489,7 @@ app/src/SS_Environment/MDL_Graph/Graph.i: app/src/SS_Environment/MDL_Graph/Graph
 
 # target to preprocess a source file
 app/src/SS_Environment/MDL_Graph/Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.i
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.i
 .PHONY : app/src/SS_Environment/MDL_Graph/Graph.cpp.i
 
 app/src/SS_Environment/MDL_Graph/Graph.s: app/src/SS_Environment/MDL_Graph/Graph.cpp.s
@@ -498,7 +498,7 @@ app/src/SS_Environment/MDL_Graph/Graph.s: app/src/SS_Environment/MDL_Graph/Graph
 
 # target to generate assembly for a file
 app/src/SS_Environment/MDL_Graph/Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.s
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/app/src/SS_Environment/MDL_Graph/Graph.cpp.s
 .PHONY : app/src/SS_Environment/MDL_Graph/Graph.cpp.s
 
 # Help Target
@@ -508,7 +508,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... runUnitTests"
+	@echo "... run_all_unit_tests"
 	@echo "... edit_cache"
 	@echo "... CommonTest/CommandQueueTest.o"
 	@echo "... CommonTest/CommandQueueTest.i"

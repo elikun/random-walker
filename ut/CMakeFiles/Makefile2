@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /app/ut
 CMAKE_BINARY_DIR = /app/ut
 
 #=============================================================================
-# Target rules for target CMakeFiles/runUnitTests.dir
+# Target rules for target CMakeFiles/run_all_unit_tests.dir
 
 # All Build rule for target.
-CMakeFiles/runUnitTests.dir/all:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/depend
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/app/ut/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target runUnitTests"
-.PHONY : CMakeFiles/runUnitTests.dir/all
+CMakeFiles/run_all_unit_tests.dir/all:
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/depend
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/app/ut/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target run_all_unit_tests"
+.PHONY : CMakeFiles/run_all_unit_tests.dir/all
 
 # Include target in all.
-all: CMakeFiles/runUnitTests.dir/all
+all: CMakeFiles/run_all_unit_tests.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
+CMakeFiles/run_all_unit_tests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /app/ut/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runUnitTests.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_all_unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /app/ut/CMakeFiles 0
-.PHONY : CMakeFiles/runUnitTests.dir/rule
+.PHONY : CMakeFiles/run_all_unit_tests.dir/rule
 
 # Convenience name for target.
-runUnitTests: CMakeFiles/runUnitTests.dir/rule
+run_all_unit_tests: CMakeFiles/run_all_unit_tests.dir/rule
 
-.PHONY : runUnitTests
-
-# clean rule for target.
-CMakeFiles/runUnitTests.dir/clean:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/clean
-.PHONY : CMakeFiles/runUnitTests.dir/clean
+.PHONY : run_all_unit_tests
 
 # clean rule for target.
-clean: CMakeFiles/runUnitTests.dir/clean
+CMakeFiles/run_all_unit_tests.dir/clean:
+	$(MAKE) -f CMakeFiles/run_all_unit_tests.dir/build.make CMakeFiles/run_all_unit_tests.dir/clean
+.PHONY : CMakeFiles/run_all_unit_tests.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/run_all_unit_tests.dir/clean
 
 .PHONY : clean
 
