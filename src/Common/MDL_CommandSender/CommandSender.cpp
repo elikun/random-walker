@@ -58,7 +58,7 @@ int CommandSender::connectToServer()
 
     m_serverAddress.sin_family = AF_INET;
     m_serverAddress.sin_port = htons(m_port);
-    m_serverAddress.sin_addr.s_addr = inet_addr(LOOPBACK_IPV4_ADDRESS);
+    m_serverAddress.sin_addr.s_addr = inet_addr(LOOPBACK_IPV4_ADDRESS.c_str());
 
     if (connect(m_socketFD, (struct sockaddr *) &m_serverAddress, sizeof(m_serverAddress)) == -1) {
         close(m_socketFD);
