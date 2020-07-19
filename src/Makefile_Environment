@@ -142,7 +142,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exceptions.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/yacc.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
-		main.pro Common/CommonDefines.hpp \
+		main.pro Common/CommonConstants.hpp \
 		Common/MDL_CommandQueue/CommandQueue.hpp \
 		Common/MDL_CommandReceiver/CommandReceiver.hpp \
 		Common/MDL_CommandSender/CommandSender.hpp \
@@ -340,7 +340,7 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents Common/CommonDefines.hpp Common/MDL_CommandQueue/CommandQueue.hpp Common/MDL_CommandReceiver/CommandReceiver.hpp Common/MDL_CommandSender/CommandSender.hpp SS_Environment/Environment.hpp SS_Environment/EnvironmentConstants.hpp SS_Environment/MDL_Dot/Dot.hpp SS_Environment/MDL_Edge/Edge.hpp SS_Environment/MDL_Graph/Graph.hpp $(DISTDIR)/
+	$(COPY_FILE) --parents Common/CommonConstants.hpp Common/MDL_CommandQueue/CommandQueue.hpp Common/MDL_CommandReceiver/CommandReceiver.hpp Common/MDL_CommandSender/CommandSender.hpp SS_Environment/Environment.hpp SS_Environment/EnvironmentConstants.hpp SS_Environment/MDL_Dot/Dot.hpp SS_Environment/MDL_Edge/Edge.hpp SS_Environment/MDL_Graph/Graph.hpp $(DISTDIR)/
 	$(COPY_FILE) --parents Common/MDL_CommandQueue/CommandQueue.cpp Common/MDL_CommandReceiver/CommandReceiver.cpp Common/MDL_CommandSender/CommandSender.cpp SS_Environment/Environment.cpp SS_Environment/main_environment.cpp SS_Environment/MDL_Dot/Dot.cpp SS_Environment/MDL_Edge/Edge.cpp SS_Environment/MDL_Graph/Graph.cpp $(DISTDIR)/
 
 
@@ -382,7 +382,7 @@ moc_Environment.cpp: Common/MDL_CommandQueue/CommandQueue.hpp \
 		SS_Environment/MDL_Dot/Dot.hpp \
 		SS_Environment/MDL_Edge/Edge.hpp \
 		SS_Environment/MDL_Graph/Graph.hpp \
-		Common/CommonDefines.hpp \
+		Common/CommonConstants.hpp \
 		SS_Environment/Environment.hpp \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -416,7 +416,7 @@ Common/MDL_CommandReceiver/CommandReceiver.o: Common/MDL_CommandReceiver/Command
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Common/MDL_CommandReceiver/CommandReceiver.o Common/MDL_CommandReceiver/CommandReceiver.cpp
 
 Common/MDL_CommandSender/CommandSender.o: Common/MDL_CommandSender/CommandSender.cpp Common/MDL_CommandSender/CommandSender.hpp \
-		Common/CommonDefines.hpp \
+		Common/CommonConstants.hpp \
 		Common/MDL_CommandQueue/CommandQueue.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Common/MDL_CommandSender/CommandSender.o Common/MDL_CommandSender/CommandSender.cpp
 
@@ -427,7 +427,7 @@ SS_Environment/Environment.o: SS_Environment/Environment.cpp SS_Environment/Envi
 		SS_Environment/MDL_Dot/Dot.hpp \
 		SS_Environment/MDL_Edge/Edge.hpp \
 		SS_Environment/MDL_Graph/Graph.hpp \
-		Common/CommonDefines.hpp
+		Common/CommonConstants.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SS_Environment/Environment.o SS_Environment/Environment.cpp
 
 SS_Environment/main_environment.o: SS_Environment/main_environment.cpp SS_Environment/Environment.hpp \
@@ -437,7 +437,7 @@ SS_Environment/main_environment.o: SS_Environment/main_environment.cpp SS_Enviro
 		SS_Environment/MDL_Dot/Dot.hpp \
 		SS_Environment/MDL_Edge/Edge.hpp \
 		SS_Environment/MDL_Graph/Graph.hpp \
-		Common/CommonDefines.hpp
+		Common/CommonConstants.hpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SS_Environment/main_environment.o SS_Environment/main_environment.cpp
 
 SS_Environment/MDL_Dot/Dot.o: SS_Environment/MDL_Dot/Dot.cpp SS_Environment/MDL_Dot/Dot.hpp \
@@ -449,7 +449,7 @@ SS_Environment/MDL_Edge/Edge.o: SS_Environment/MDL_Edge/Edge.cpp SS_Environment/
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o SS_Environment/MDL_Edge/Edge.o SS_Environment/MDL_Edge/Edge.cpp
 
 SS_Environment/MDL_Graph/Graph.o: SS_Environment/MDL_Graph/Graph.cpp SS_Environment/MDL_Graph/Graph.hpp \
-		Common/CommonDefines.hpp \
+		Common/CommonConstants.hpp \
 		Common/MDL_CommandQueue/CommandQueue.hpp \
 		SS_Environment/MDL_Edge/Edge.hpp \
 		SS_Environment/EnvironmentConstants.hpp

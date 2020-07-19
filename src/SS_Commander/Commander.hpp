@@ -1,7 +1,7 @@
 #ifndef COMMANDER_CLASS_H
 #define COMMANDER_CLASS_H
 
-#include "../Common/CommonDefines.hpp"
+#include "../Common/CommonConstants.hpp"
 #include "../Common/MDL_CommandQueue/CommandQueue.hpp"
 #include "../Common/MDL_CommandSender/CommandSender.hpp"
 #include "MDL_CommandGenerator/CommandGenerator.hpp"

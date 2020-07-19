@@ -10,7 +10,7 @@
 #include <thread>
 #include <unistd.h>
 
-#include "../CommonDefines.hpp"
+#include "../CommonConstants.hpp"
 #include "../MDL_CommandQueue/CommandQueue.hpp"
 
 class CommandSender

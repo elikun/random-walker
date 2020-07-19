@@ -5,7 +5,7 @@
 #include <fstream>
 #include <vector>
 
-#include "../../Common/CommonDefines.hpp"
+#include "../../Common/CommonConstants.hpp"
 #include "../../Common/MDL_CommandQueue/CommandQueue.hpp"
 #include "../MDL_Edge/Edge.hpp"
 

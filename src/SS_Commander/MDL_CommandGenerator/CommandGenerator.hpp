@@ -10,7 +10,7 @@
 #include <thread>
 
 #include "../CommanderConstants.hpp"
-#include "../../Common/CommonDefines.hpp"
+#include "../../Common/CommonConstants.hpp"
 #include "../../Common/MDL_CommandQueue/CommandQueue.hpp"
 
 class CommandGenerator
