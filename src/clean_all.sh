@@ -30,3 +30,6 @@ rm -f /app/exe/environment
 
 # Remove build.log file
 rm -f ./build.log
+
+# Remove .qmake.stash file
+rm -f ./.qmake.stash

@@ -27,7 +27,7 @@ void CommandSender::commandSendThread(CommandQueue& cmdQueue)
         }
         else {
             if (m_port == ENVIRONMENT_PORT) {
-                std::cout << "[INFO] CommandSender: successful connection of Network Simulator to Maze Simulator" <<  std::endl;
+                std::cout << "[INFO] CommandSender: successful connection of Commander to Environment" <<  std::endl;
             }
         }
         if (sendCommandToServer(cmdQueue) == -1) {
