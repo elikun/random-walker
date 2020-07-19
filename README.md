@@ -1,3 +1,3 @@
 # random-walker
 
-(./docs/sample-full-map.png)
+![Sample Full Map](./docs/sample-full-map.png)
