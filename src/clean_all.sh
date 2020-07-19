@@ -28,8 +28,8 @@ rm -f ./moc_*
 rm -f /app/exe/commander
 rm -f /app/exe/environment
 
-# Remove build.log file
-rm -f ./build.log
-
-# Remove .qmake.stash file
+# Delete .qmake.stash file
 rm -f ./.qmake.stash
+
+# Delete build.log file
+rm -f ./build.log
