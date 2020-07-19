@@ -3,7 +3,7 @@
 #include "../../src/Common/MDL_CommandReceiver/CommandReceiver.hpp"
 #include <gtest/gtest.h>
 
-#define TEST_NODE_PORT (10004)
+const uint16_t TEST_NODE_PORT = 10004;
 
 class CommandReceiverTest : public testing::Test {
     protected:

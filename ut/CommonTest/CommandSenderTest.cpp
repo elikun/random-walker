@@ -3,7 +3,7 @@
 #include "../../src/Common/MDL_CommandSender/CommandSender.hpp"
 #include <gtest/gtest.h>
 
-#define TEST_NODE_PORT (10005)
+const uint16_t TEST_NODE_PORT = 10005;
 
 class CommandSenderTest : public testing::Test {
     protected:

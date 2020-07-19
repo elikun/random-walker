@@ -3,10 +3,10 @@
 #include "../../src/SS_Environment/MDL_Graph/Graph.hpp"
 #include <gtest/gtest.h>
 
-#define CONF_INI_TEST_FILE_ALL      "SS_EnvironmentTest/conf_GraphTest_AllEdges.ini"
-#define CONF_INI_TEST_FILE_EMPTY    "SS_EnvironmentTest/conf_GraphTest_NoEdges.ini"
-#define CONF_INI_TEST_FILE_REPEATED "SS_EnvironmentTest/conf_GraphTest_RepeatedEdges.ini"
-#define CONF_INI_TEST_FILE_UNIQUE   "SS_EnvironmentTest/conf_GraphTest_UniqueEdges.ini"
+const std::string CONF_INI_TEST_FILE_ALL      = "SS_EnvironmentTest/conf_GraphTest_AllEdges.ini";
+const std::string CONF_INI_TEST_FILE_EMPTY    = "SS_EnvironmentTest/conf_GraphTest_NoEdges.ini";
+const std::string CONF_INI_TEST_FILE_REPEATED = "SS_EnvironmentTest/conf_GraphTest_RepeatedEdges.ini";
+const std::string CONF_INI_TEST_FILE_UNIQUE   = "SS_EnvironmentTest/conf_GraphTest_UniqueEdges.ini";
 
 extern bool operator== (const Edge &e1, const Edge &e2);
 
