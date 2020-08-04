@@ -4,4 +4,6 @@
 
 ![Sample Defined Map](./docs/sample-defined-map.png)
 
+---
+
 Copyright © 2020 Rennel Ongcoy (Eli). All rights reserved.
